@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Octopus - Cadastro</title>
+    <link rel="shortcut icon" href="images/3001favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/style-cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+</head>
+
+<body>
+
+    <div class="limiter">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+            <div class="container-login100">
+                <div class="wrap-login100 animate__bounceIn">
+                    <div class="login100-pic js-tilt" data-tilt>
+                        <img src="images/cadastro.svg" alt="IMG">
+                    </div>
+
+                    <form class="login100-form validate-form" id="flip-box-front" action="/login/cadastrar" method="POST">
+                        <div class="mov">
+                            <span class="login100-form-title">
+                                Cadastro no <span style="color: #00e48b;">Octopus</span>
+                                <div class="wrap-input100 validate-input"
+                                    data-validate="Valid email is required: ex@abc.xyz">
+                                    <input class="input100" type="text" name="name" placeholder="Nome" id="name" required>
+                                    <span class="focus-input100"></span>
+                                    <span class="symbol-input100">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="wrap-input100 validate-input"
+                                    data-validate="É necessário um email: ex@abc.xyz">
+                                    <input class="input100" type="email" name="email" placeholder="Email" id="email" required>
+                                    <span class="focus-input100"></span>
+                                    <span class="symbol-input100">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+
+                                <div class="wrap-input100 validate-input" data-validate="É necessário uma senha">
+                                    <input class="input100" type="password" name="password" placeholder="Senha" id="password" required>
+                                    <span class="focus-input100"></span>
+                                    <span class="symbol-input100">
+                                        <i class="fa fa-lock" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="container-login100-form-btn">
+                                    <button type="submit" class="login100-form-btn">
+                                        Cadastrar
+                                    </button>
+                                </div>
+
+
+
+                                <div class="text-center p-t-136" id="mover">
+                                    <a class="txt2" href="/login">
+                                        Voltar para login
+                                        <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Octopus - Login</title>
+	<link rel="shortcut icon" href="images/3001favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/style-login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+</head>
+
+<body>
+
+	<div class="limiter">
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+
+			<div class="container-login100">
+				<div class="wrap-login100 animate__bounceIn">
+					<div class=" login100-pic js-tilt">
+						<img src="images/login.svg" alt="IMG">
+					</div>
+
+					<form class="login100-form validate-form" id="flip-box-front" action="/logout?_method=DELETE" method="POST">
+						<span class="login100-form-title">
+							já está logado <span style="color: #00e48b;">Octopus</span>
+						
+						</div>
+						<div class="container-login100-form-btn">
+							<button class="login100-form-btn" type="submit">
+								log out
+							</button>
+						</div>
+
+
+					</form>
+				</div>
+			</div>
+		</ul>
+	</div>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<script src"./jquery/jquery-3.2.1.min.js"></script>"
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
